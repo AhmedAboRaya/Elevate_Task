@@ -9,6 +9,8 @@ Welcome to the Product Management and Shopping project! This project allows user
 - [Installation](#installation)
 - [Usage](#usage)
 - [Notes](#notes)
+- [Contribution](#contribution)
+- [Contact](#contact)
 
 ## Project Description
 
@@ -24,20 +26,24 @@ This project serves as a simple interface for product management. Users can view
 ## Technologies Used
 - **React:** For building the user interface.
 - **Tailwind CSS:** For designing a flexible and beautiful user interface.
-- **JavaScript (ES6):** To enhance user experience and interact with data.
-  
+- **DaisyUI:** A plugin for Tailwind CSS that provides pre-designed UI components, allowing for faster development and a consistent design.
+- **Axios:** Used for making HTTP requests, though primarily the project uses local state for data management.
+- **React Router DOM:** For handling routing within the application, enabling smooth navigation between different views.
+- **Hamburger React:** A library used for creating a responsive hamburger menu for better navigation on smaller screens.
+- **Lucide React:** Provides a set of icons for use throughout the application, enhancing the visual experience.
+
 ## Installation
 
 To get started with the project, follow these steps:
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/YourUsername/Product-Management.git
+   git clone https://github.com/AhmedAboRaya/Elevate_Task.git
    ```
 
 2. **Navigate into the project directory:**
    ```bash
-   cd Product-Management
+   cd Elevate_Task
    ```
 
 3. **Install dependencies:**
@@ -47,7 +53,7 @@ To get started with the project, follow these steps:
 
 4. **Run the project:**
    ```bash
-   npm start
+   npm run dev
    ```
 
 ## Usage
