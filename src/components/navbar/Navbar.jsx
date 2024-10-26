@@ -3,8 +3,8 @@ import { useState, useEffect } from "react";
 import ThemeToggle from "../theme/ThemeToggle";
 import { Link } from "react-router-dom";
 import { useLocation } from "react-router-dom";
-import { Menu } from 'lucide-react';
-import { X } from 'lucide-react';
+import { Menu } from "lucide-react";
+import { X } from "lucide-react";
 
 const Navbar = ({ setSearch, cartItems = [] }) => {
   const [searchTerm, setSearchTerm] = useState("");
@@ -48,7 +48,7 @@ const Navbar = ({ setSearch, cartItems = [] }) => {
       >
         <div className="flex-1">
           <Link className="btn btn-ghost text-xl" to="/">
-            Your Logo
+            Products
           </Link>
         </div>
         {location.pathname === "/" && (
@@ -98,14 +98,14 @@ const Navbar = ({ setSearch, cartItems = [] }) => {
       >
         <div className="flex-1">
           <Link className="btn btn-ghost text-xl" to="/">
-            Your Logo
+            Products
           </Link>
         </div>
         <div
           className="flex-none mr-1 z-60 relative"
           onClick={() => setIsOpen(!isOpen)}
         >
-          {isOpen ? <X className="size-10" /> :<Menu className="size-10"/> }
+          {isOpen ? <X className="size-10" /> : <Menu className="size-10" />}
         </div>
       </div>
 
@@ -117,9 +117,15 @@ const Navbar = ({ setSearch, cartItems = [] }) => {
       >
         <div className="flex flex-col h-full items-center">
           <div className="flex items-center  p-4">
-
-            <div className="cursor-pointer absolute top-2 right-2" onClick={() => setIsOpen(!isOpen)}>
-            {isOpen ? <X className="size-10" /> :<Menu className="size-10"/> }
+            <div
+              className="cursor-pointer absolute top-2 right-2"
+              onClick={() => setIsOpen(!isOpen)}
+            >
+              {isOpen ? (
+                <X className="size-10" />
+              ) : (
+                <Menu className="size-10" />
+              )}
             </div>
           </div>
           <div className="flex flex-col space-y-4 mt-8">
@@ -168,10 +174,9 @@ const Navbar = ({ setSearch, cartItems = [] }) => {
           showSecondNavbar ? "opacity-100" : "opacity-0 pointer-events-none"
         }`}
       >
-        
         <div className="flex-1">
           <Link className="btn btn-ghost text-xl" to="/">
-            Your Logo
+            Products
           </Link>
         </div>
         {location.pathname === "/" && (
@@ -218,17 +223,16 @@ const Navbar = ({ setSearch, cartItems = [] }) => {
           showSecondNavbar ? "opacity-100" : "opacity-0 pointer-events-none"
         }`}
       >
-        
         <div className="flex-1">
           <Link className="btn btn-ghost text-xl" to="/">
-            Your Logo
+            Products
           </Link>
         </div>
         <div
           className="flex-none mr-1 z-60 relative"
           onClick={() => setIsOpen(!isOpen)}
         >
-          {isOpen ? <X className="size-10" /> :<Menu className="size-10"/> }
+          {isOpen ? <X className="size-10" /> : <Menu className="size-10" />}
         </div>
       </div>
     </>
